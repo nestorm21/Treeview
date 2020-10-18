@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TreeView</title>
+    <script src="Components/Treeview.js"></script>
+  </head>
+
+  <body>
+    <script>
+      const nose = [
+        {
+          label: 'Pizzas',
+          children: [
+            {
+              label: 'Pepperoni',
+            },
+            {
+              label: 'Maiz',
+            },
+            {
+              label: 'Tocineta',
+              children: [
+                {
+                  label: 'Salami',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Panes',
+          children: [
+            {
+              label: 'Con queso',
+            },
+            {
+              label: 'Con huevo',
+            },
+          ],
+        },
+      ];
+      const tree = document.createElement('app-treeview');
+      tree.setAttribute('options', JSON.stringify(nose));
+      document.body.appendChild(tree);
+    </script>
+  </body>
+</html>

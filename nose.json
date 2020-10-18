@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Beverages",
+    "children": [
+      {
+        "label": "Water"
+      },
+      {
+        "label": "Coffee"
+      },
+      {
+        "label": "Tea",
+        "children": [
+          {
+            "label": "Black Tea"
+          },
+          {
+            "label": "White Tea"
+          },
+          {
+            "label": "Green Tea",
+            "children": [
+              {
+                "label": "Sencha"
+              },
+              {
+                "label": "Gyokuro"
+              },
+              {
+                "label": "Matcha"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
